@@ -5,16 +5,23 @@
 //  Created by Claire Roughan on 06/12/2019.
 //  Copyright © 2019 Claire Roughan. All rights reserved.
 //
+/*
+ NewsAPI.org - KEY:d2468a5b386d477b88d02acfe60f28e9
+ */
+
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 46/255, green: 18/255, blue: 99/255, alpha: 1.0)
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         return true
     }
 
